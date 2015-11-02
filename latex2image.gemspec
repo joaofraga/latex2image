@@ -5,7 +5,7 @@ require 'latex2image/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "latex2image"
-  spec.version       = Latex2image::VERSION
+  spec.version       = Latex2Image::VERSION
   spec.authors       = ["Joao Fraga"]
   spec.email         = ["jgfraga@gmail.com"]
 
@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "pry"
 end

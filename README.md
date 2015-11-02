@@ -1,4 +1,4 @@
-# Latex2image
+# Latex2Image
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/latex2image`. To experiment with that code, run `bin/console` for an interactive prompt.
 
@@ -6,7 +6,7 @@ TODO: Delete this and the text above, and describe your gem
 
 ## Dependencies
 
-That gem require a LaTeX distribution and dvipng. The shell-script will only work in a Linux distribution, e.g. Ubuntu.
+That gem require a `LaTeX` distribution and `dvipng`. The shell-script will only work in a Linux distribution, e.g. **Ubuntu**.
 
 To install a `LaTeX` distribution in **Ubuntu** type in a terminal:
 

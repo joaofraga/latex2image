@@ -4,7 +4,7 @@ module Latex2Image
 
     def initialize(latex, output=nil)
       @latex = latex
-      @output = File.new(output, 'w+') || Tempfile.new(%w(latex2image png))
+      @output = output.nil? ? Tempfile.new(%w(latex2image png)) : File.new(output, 'w+')
     end
 
     def generate

@@ -35,7 +35,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To convert LaTeX formules to PNG, just add to your code:
+
+``` ruby
+image = Latex2Image.convert '\int \ln{x} dx = |x| \ln{|x|} - x +c'
+image.output
+# => #<File:/tmp/latex2image20151102-4025-9tmj0upng>
+```
+
+###
 
 ## Development
 

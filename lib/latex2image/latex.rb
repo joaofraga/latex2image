@@ -2,28 +2,36 @@ require 'digest'
 
 module Latex2Image
   class Latex
+    attr_reader :formule, :file
+
     def initialize(formule)
       @formule = formule
+      @file = write_file
     end
 
     def to_tex
       %{
-        \\begin{displaymath}
+        \\documentclass[fleqn]{article}
+        \\DeclareMathSizes{20}{20}{20}{20}
+        \\usepackage{amssymb,amsmath,bm}
+        \\usepackage[latin1]{inputenc}
+        \\begin{document}
+        \\thispagestyle{empty}
+        \\begin{equation*}
         #{@formule}
-        \\end{displaymath}
+        \\end{equation*}
+        \\end{document}
       }
-    end
-
-    def to_file
-
     end
 
     private
 
-    def file
-      {
-        name: file_name
-      }
+    def write_file
+      file = Tempfile.new([file_name, '.tex'])
+      file.write to_tex
+      file.close
+
+      file
     end
 
     def file_name

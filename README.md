@@ -43,6 +43,10 @@ image.output
 # => #<File:/tmp/latex2image20151102-4025-9tmj0upng>
 ```
 
+This file will look like:
+
+![latex](https://cloud.githubusercontent.com/assets/501867/10887518/9dd01140-816e-11e5-92d8-00db7249e7ae.png)
+
 ###
 
 ## Development
